@@ -21,6 +21,7 @@ def context_creation(playwright: Playwright):
     # page.pause()
 
     page.wait_for_load_state("networkidle")
+    page.set_default_timeout(3000)
 
     # login_issue = True
     # while login_issue:
