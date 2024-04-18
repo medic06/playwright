@@ -39,6 +39,9 @@ def context_creation(playwright: Playwright):
     page.get_by_label("Password").fill(PASSWORD)
     page.get_by_test_id("submit").get_by_test_id("buttonElement").click()
     page.wait_for_load_state("networkidle")
+    page.get_by_label("imedic06 account menu").click()
+    page.get_by_role("link", name="My Account").click()
+    # page.get_by_text(".cls-anonymous-icon{fill: inherit}imedic06").click()
     context.storage_state(path="state.json")
 
     yield context

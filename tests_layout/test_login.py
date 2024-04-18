@@ -23,7 +23,7 @@ def test_login(set_up_1) -> None:
     # page.pause()
     expect(page.locator("[aria-label=\"imedic06 account menu\"]")).to_be_visible()
     expect(page.get_by_role("button", name="Log In")).to_be_hidden()
-    expect(page.locator("text=Celebrating Beauty and Style")).to_be_visible()
+    expect(page.get_by_text(".cls-anonymous-icon{fill: inherit}imedic06")).to_be_visible()
 
     print("Exit code 0 means success")
 
