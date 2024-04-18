@@ -40,5 +40,4 @@ jobs:
       env:
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
-        pytest --template=html1/index.html --report=GItHubActions_report.html \
-              --video=retain-on-failure --screenshot=only-on-failure  -n3
+        pytest
