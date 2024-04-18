@@ -28,7 +28,6 @@ def test_login(set_up_1) -> None:
     print("Exit code 0 means success")
 
     # ---------------------
-    # TODO: Tear down to be handled by conftest.py
     # context.close()
     # browser.close()
 

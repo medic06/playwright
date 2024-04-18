@@ -18,7 +18,6 @@ print("Exit code 0 means success")
 #     test_about_us_section_verbiage(playwright) -- Not needed when using pytest
 
 # ---------------------
-# TODO: Tear down to be handled by conftest.py
 # context.close()
 # browser.close()
 

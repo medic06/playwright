@@ -12,7 +12,6 @@ def test_new_collection(go_to_new_collection) -> None:
             assert 'socks' not in link.text_content().lower()
 
 # ---------------------
-# TODO: Tear down to be handled by conftest.py
 # context.close()
 # browser.close()
 
