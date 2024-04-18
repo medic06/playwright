@@ -10,7 +10,7 @@ PASSWORD = os.environ['PASSWORD']
 @pytest.fixture(scope="session")
 def context_creation(playwright: Playwright):
     # From here to ...
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=True)
     # browser = playwright.chromium.launch(headless=False, slow_mo=100)
     context = browser.new_context()
     page = context.new_page()
